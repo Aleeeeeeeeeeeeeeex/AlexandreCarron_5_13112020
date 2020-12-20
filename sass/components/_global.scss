@@ -1,35 +1,13 @@
-
-
-.btn {
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: #ffffff;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 1em;
-    border-radius: 10rem;
-    text-align: center;
-    width: 11em;
-    margin: auto;
-    font-size: medium;
-    font-weight: 400;
-  }
-
-  .btn:hover{
-  box-shadow: 2px 2px 7px #aaa;
-  opacity: 0.8;
+.ours1 {
+ display: flex;
+ background-color: aliceblue;
+ width: 50%;
+ margin-left: 40px;
 }
 
-  .titre__menu-border 
-    {
-      border-bottom-style: solid;
-      border-color: $color-green;
-      padding-bottom: 5px;
-      border-width: 1.5px;
-      width: 44px;
-  }
-
-  .position_cta_commander {
-    margin-top: 33px;
+.ours1_img {
+  background-image:url(../../images/teddy_1.jpg);
+    width: 10em;
+    height: 10em;
+    background-size: cover;
 }
-
-

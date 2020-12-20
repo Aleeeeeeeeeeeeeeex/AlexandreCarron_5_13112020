@@ -1,40 +1,25 @@
 @charset "UTF-8";
-.btn {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: #ffffff;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 1em;
-  border-radius: 10rem;
-  text-align: center;
-  width: 11em;
-  margin: auto;
-  font-size: medium;
-  font-weight: 400;
+.ours1 {
+  display: flex;
+  background-color: aliceblue;
+  width: 50%;
+  margin-left: 40px;
 }
 
-.btn:hover {
-  box-shadow: 2px 2px 7px #aaa;
-  opacity: 0.8;
+.ours1_img {
+  background-image: url(../../images/teddy_1.jpg);
+  width: 10em;
+  height: 10em;
+  background-size: cover;
 }
 
-.titre__menu-border {
-  border-bottom-style: solid;
-  border-color: #99e2d0;
-  padding-bottom: 5px;
-  border-width: 1.5px;
-  width: 44px;
-}
-
-.position_cta_commander {
-  margin-top: 33px;
+nav {
+  padding-right: 52px;
+  padding-top: 8px;
 }
 
 nav ul {
   list-style-type: none;
-  position: absolute;
-  top: 5%;
-  right: 5%;
   display: flex;
   font-size: small;
 }
@@ -56,8 +41,19 @@ nav a:hover {
   padding-top: 2.9rem;
 }
 
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 #header_background_image_homepage {
-  background-image: url(../../images/restaurants/charonne.jpg);
+  background-image: url(../../images/teddy_5.jpg);
+}
+
+.header_image {
+  width: 100%;
+  height: 40em;
+  background-size: cover;
 }
 
 footer {
