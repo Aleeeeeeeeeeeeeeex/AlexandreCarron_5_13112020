@@ -1,0 +1,487 @@
+@charset "UTF-8";
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 10rem;
+  text-align: center;
+  width: 11em;
+  margin: auto;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 7px #aaa;
+  opacity: 0.8;
+}
+
+.titre__menu-border {
+  border-bottom-style: solid;
+  border-color: #99e2d0;
+  padding-bottom: 5px;
+  border-width: 1.5px;
+  width: 44px;
+}
+
+.position_cta_commander {
+  margin-top: 33px;
+}
+
+.section__titremenu {
+  display: flex;
+  padding-left: 20px;
+}
+
+.section__titremenu h1 {
+  text-align: left;
+  width: 266px;
+}
+
+.section__titremenu i {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.section_menu {
+  background-color: #f6f6f6;
+  padding-top: 25px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: relative;
+  top: -43px;
+  padding-bottom: 40px;
+  margin-bottom: -41px;
+}
+
+.menu__entree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: menu__entree 3000ms;
+}
+
+.entree {
+  animation: entree 1000ms;
+}
+
+@keyframes entree {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.plat {
+  animation: plat 2000ms;
+}
+
+@keyframes plat {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dessert {
+  animation: dessert 3000ms;
+}
+
+@keyframes dessert {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section__typemenu {
+  padding-left: 20px;
+}
+
+.menu__item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 20em;
+  margin-right: 2%;
+  margin: auto;
+  margin-bottom: 10px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 350px) {
+  .menu__item {
+    width: 310px;
+  }
+}
+
+.menu__item-direction {
+  position: absolute;
+  flex: 1;
+  padding-left: 12px;
+  line-height: 5px;
+  padding-top: 5px;
+}
+
+.menu__itemprix-direction {
+  padding-top: 24px;
+  position: relative;
+  left: 36px;
+  font-weight: 800;
+  background-color: white;
+}
+
+.marginleftmenu {
+  margin-left: 235px;
+}
+
+/*.header {
+    background: $colour-primary;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;   
+    &__logo {
+        font-size: 7rem;
+        color: $colour-secondary;
+        margin-left: 10rem;
+        @include heading-shadow($colour-white);
+    }
+}*/
+.header_image {
+  width: 100%;
+  height: 16em;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-position {
+  flex: 1;
+}
+
+.header__arrow-position {
+  position: relative;
+  left: 25px;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 27px;
+  padding-bottom: 20px;
+}
+
+#footer {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+@font-face {
+  font-family: "shrik";
+  src: url("fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+html, body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "roboto", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "roboto", Helvetica, Arial, sans-serif;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.Shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+.fontsmall {
+  font-size: 13px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#localisation {
+  background-color: #eaeaea;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.fa-map-marker-alt:before {
+  content: "";
+  margin-right: 17px;
+}
+
+#titre {
+  padding-top: 10px;
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+}
+
+#titre h2, #titre p {
+  text-align: center;
+}
+
+#titre p {
+  padding-bottom: 10px;
+}
+
+#titre h2 {
+  font-size: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#titre p {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin-bottom: 2em;
+}
+
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 10rem;
+  text-align: center;
+  width: 11em;
+  margin: auto;
+  font-size: medium;
+  font-weight: 400;
+}
+
+#fonctionnement {
+  margin-top: 50px;
+  padding-left: 14px;
+  margin-bottom: 45px;
+}
+
+#fonctionnement h2 {
+  padding-left: 5px;
+}
+
+.fonctionnement_item {
+  background-color: #f6f6f6;
+  font-size: 20px;
+  padding: 0.2em;
+  border-radius: 25px;
+  width: 16.5em;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 4px 4px 5px #eaeaea;
+}
+@media screen and (max-width: 350px) {
+  .fonctionnement_item {
+    width: 278px;
+    margin-left: 1px;
+  }
+}
+.fonctionnement_item:hover {
+  background-color: #f5edff;
+}
+.fonctionnement_item:hover .item__picto-position {
+  color: #9356DC;
+}
+
+.number {
+  font-size: 0.8em;
+  float: left;
+  padding: 2px;
+  position: relative;
+  left: -15px;
+  background-color: #9356DC;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 77px;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-top: 21px;
+  margin-right: 10px;
+}
+
+.font_small {
+  font-size: medium;
+}
+
+.item__picto-position {
+  padding-right: 26px;
+}
+
+#restaurant {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f6f6f6;
+  padding-bottom: 41px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  background-size: cover;
+  width: 100%;
+  height: 10em;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.texte {
+  background-color: #ffffff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-top: 1px;
+  padding-left: 15px;
+  display: flex;
+}
+
+.texte_bloc {
+  width: 255px;
+}
+
+.heart {
+  padding-right: 20px;
+  padding-top: 20px;
+  background: no-repeat;
+  background-image: url(../../images/logo/heart-regular.svg);
+  margin-top: 16px;
+}
+@media screen and (max-width: 350px) {
+  .heart {
+    padding-right: 38px;
+  }
+}
+
+.heart:hover {
+  background-image: url(../../images/logo/heart-solid.svg);
+}
+
+.svg-inline--fa {
+  color: #FF79DA;
+}
+
+.position {
+  margin-top: -10px;
+}
+
+.bloc_restaurant {
+  margin: auto;
+  width: 20em;
+  margin-bottom: 20px;
+}
+
+.fa-heart:before {
+  content: "";
+  font-size: 24px;
+}
+
+.nouveau {
+  background-color: #99e2d0;
+  color: #139273;
+  width: 78px;
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 2px;
+  padding-top: 6px;
+  position: relative;
+  top: 14px;
+  left: 68%;
+}
+
+.background_image_menilmontant {
+  background-image: url(../../images/restaurants/menilmontant.jpg);
+}
+
+.background_image_charonne {
+  background-image: url(../../images/restaurants/charonne.jpg);
+}
+
+.background_image_citerouge {
+  background-image: url(../../images/restaurants/citerouge.jpg);
+}
+
+.background_image_folie {
+  background-image: url(../../images/restaurants/folie.jpg);
+}
+
+.fa-utensils:before {
+  content: "";
+  padding-right: 8px;
+}
+
+.fa-hands-helping:before {
+  content: "";
+  padding-right: 9px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

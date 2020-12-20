@@ -1,0 +1,65 @@
+
+@mixin mobile-item {
+    @media screen and (max-width: $breakpoints-mobile){
+    width: 278px;
+    margin-left: 1px;
+    }
+}
+
+@mixin mobile-heart {
+    @media screen and (max-width:$breakpoints-mobile){
+    padding-right: 38px;
+    }
+}
+
+@mixin mobile-menu {
+    @media screen and (max-width:$breakpoints-mobile){
+    width: 310px;
+    }
+}
+    
+    
+
+
+
+
+@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
+    text-shadow: $offset $offset $colour;
+}
+
+@mixin border($colour:$colour-primary) {
+    border: .1rem solid $colour;
+}
+
+@mixin img-ratio {
+    width: 100%;
+        display: block;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+
+
+
+  
+@mixin btn {
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10rem;
+    text-align: center;
+    width: 11em;
+    margin: auto;
+    font-size: medium;
+    font-weight: 400;
+  }
