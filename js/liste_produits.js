@@ -23,6 +23,10 @@ for (let i in listeOurs) {
     productOurs.classList.add('ours1');
     let imageOurs = document.createElement('div');
     imageOurs.classList.add('ours1_img');
+    imageOurs.src = `${ours.imageUrl}`;
+
+
+
     productOurs.append(imageOurs);
 
 };
