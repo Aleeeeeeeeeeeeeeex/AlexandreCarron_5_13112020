@@ -1,3 +1,5 @@
+// Création de l'objet Ours
+
 class Ours {
     constructor (name, price, description, imageURL){
         this.name = name;
@@ -7,27 +9,42 @@ class Ours {
     }
 }
 
+// Création de nouvelles instances
 let ours1 = new Ours('teddy1', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
 let ours2 = new Ours('teddy2', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
 let ours3 = new Ours('teddy3', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
 let ours4 = new Ours('teddy4', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
 
 
+// Création du tableau
 let listeOurs = [];
 episodes.push(ours1, ours2, ours3, ours4);
 
+
+
+// Afficher le tableau
 const listeVue = document.getElementById('liste');
 
+// Boucle pour afficher chaque élément du tableau
 for (let i in listeOurs) {
     let productOurs = document.createElement('div');
     productOurs.classList.add('ours1');
+
+    // Afficher l'image
     let imageOurs = document.createElement('div');
     imageOurs.classList.add('ours1_img');
     imageOurs.src = `${ours.imageUrl}`;
 
+    // Afficher le nom
+    let productRightDiv = document.createElement('div');
+    let productName = document.createElement('p');
+    productRightDiv.classList.add(ours1_desc);
+    productName.innerText = `${ours.name}`;
 
 
-    productOurs.append(imageOurs);
+
+    listeOurs.append(productOurs);
+    productOurs.append(imageOurs, productName);
 
 };
 
