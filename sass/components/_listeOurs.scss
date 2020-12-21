@@ -2,7 +2,8 @@
  display: flex;
  background-color: aliceblue;
  width: 50%;
- margin-left: 40px;
+ margin: auto;
+ margin-bottom: 20px;
 }
 
 .ours1_img {
@@ -15,3 +16,8 @@
 .ours1_desc{
 padding-left: 10px;
 }
+
+.price {
+  padding-left: 10px;
+}
+

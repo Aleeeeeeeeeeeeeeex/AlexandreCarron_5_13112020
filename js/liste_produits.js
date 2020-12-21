@@ -10,10 +10,10 @@ class Ours {
 }
 
 // Création de nouvelles instances
-let ours1 = new Ours('teddy1', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
-let ours2 = new Ours('teddy2', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
-let ours3 = new Ours('teddy3', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
-let ours4 = new Ours('teddy4', 45, true, 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
+let ours1 = new Ours('teddy1', 45, 'description1', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
+let ours2 = new Ours('teddy2', 40, 'decription2', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
+let ours3 = new Ours('teddy3', 37, 'description3', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_4.jpg');
+let ours4 = new Ours('teddy4', 30, 'description4', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_5.jpg');
 
 
 // Création du tableau
@@ -32,20 +32,33 @@ for (let i in listeOurs) {
     productOurs.classList.add('ours1');
 
     // Afficher l'image
-    let imageOurs = document.createElement('div');
-    imageOurs.classList.add('ours1_img');
-    imageOurs.src = `${listeOurs.imageUrl}`;
-
-    // Afficher le nom
-    let productRightDiv = document.createElement('div');
-    let productName = document.createElement('p');
-    productRightDiv.classList.add('ours1_desc');
-    productName.innerText = `${listeOurs.name}`;
-
-
-
+    let imageDivOurs = document.createElement('div');
+    let productImage = document.createElement('img');
+    productImage.src = `${listeOurs[i].imageUrl}`;
+    console.log(productImage.src);
     
-    productOurs.append(imageOurs, productName);
+
+    // Afficher le nom + la description
+    let productRightDiv = document.createElement('div');
+    productRightDiv.classList.add('ours1_desc');
+    let productName = document.createElement('p');
+    let productDesc = document.createElement ('p');
+    productName.innerText = `${listeOurs[i].name}`;
+    productDesc.innerText = `${listeOurs[i].description}`;
+
+    // Afficher le prix
+    let productRightDivPrice = document.createElement('div');
+    productRightDivPrice.classList.add('price');
+    let productPrice = document.createElement('p');
+    productPrice.innerText = `${listeOurs[i].price}` + '€';
+
+
+
+    listeVue.append(productOurs);
+    productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
+    imageDivOurs.append(productImage);
+    productRightDiv.append(productName, productDesc);
+    productRightDivPrice.append(productPrice);
 
 };
 
