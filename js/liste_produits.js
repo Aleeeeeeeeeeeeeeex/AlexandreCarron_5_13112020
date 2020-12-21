@@ -35,7 +35,6 @@ for (let i in listeOurs) {
     let imageDivOurs = document.createElement('div');
     let productImage = document.createElement('img');
     productImage.src = `${listeOurs[i].imageUrl}`;
-    console.log(productImage.src);
     
 
     // Afficher le nom + la description
@@ -52,8 +51,7 @@ for (let i in listeOurs) {
     let productPrice = document.createElement('p');
     productPrice.innerText = `${listeOurs[i].price}` + '€';
 
-
-
+    //structure Div
     listeVue.append(productOurs);
     productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
     imageDivOurs.append(productImage);
