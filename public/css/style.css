@@ -81,7 +81,7 @@ footer {
 }
 @font-face {
   font-family: "roboto";
-  src: url("fonts/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto-Regular.ttf");
 }
 html, body {
   background-color: #ffffff;
