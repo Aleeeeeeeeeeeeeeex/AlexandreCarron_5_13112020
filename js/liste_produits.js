@@ -34,7 +34,7 @@ for (let i in listeOurs) {
     // Afficher l'image
     let imageDivOurs = document.createElement('div');
     let productImage = document.createElement('img');
-    productImage.src = `${listeOurs[i].imageUrl}`;
+    console.log(listeOurs[i].imageUrl);
     
 
     // Afficher le nom + la description
