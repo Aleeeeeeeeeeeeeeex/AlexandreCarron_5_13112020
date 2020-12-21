@@ -18,7 +18,8 @@ let ours4 = new Ours('teddy4', 45, true, 'https://alex2020git.github.io/Alexandr
 
 // Création du tableau
 let listeOurs = [];
-episodes.push(ours1, ours2, ours3, ours4);
+listeOurs.push(ours1, ours2, ours3, ours4);
+let numberOfOurs = listeOurs.length;
 
 
 
@@ -33,17 +34,17 @@ for (let i in listeOurs) {
     // Afficher l'image
     let imageOurs = document.createElement('div');
     imageOurs.classList.add('ours1_img');
-    imageOurs.src = `${ours.imageUrl}`;
+    imageOurs.src = `${listeOurs.imageUrl}`;
 
     // Afficher le nom
     let productRightDiv = document.createElement('div');
     let productName = document.createElement('p');
-    productRightDiv.classList.add(ours1_desc);
-    productName.innerText = `${ours.name}`;
+    productRightDiv.classList.add('ours1_desc');
+    productName.innerText = `${listeOurs.name}`;
 
 
 
-    listeOurs.append(productOurs);
+    
     productOurs.append(imageOurs, productName);
 
 };
