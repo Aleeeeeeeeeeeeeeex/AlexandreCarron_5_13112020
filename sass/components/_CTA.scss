@@ -9,4 +9,5 @@
     width: 154px;
     font-size: medium;
     font-weight: 400;
+    @include mobile_btn;
   }

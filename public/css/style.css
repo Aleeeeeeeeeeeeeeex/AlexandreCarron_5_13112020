@@ -15,11 +15,13 @@
 }
 @media screen and (max-width: 550px) {
   .listeOurs {
-    width: 530px;
+    width: 276px;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
     background-color: white;
+    flex-direction: column;
+    height: auto;
   }
 }
 
@@ -46,12 +48,25 @@
   font-size: 19px;
   font-weight: 400;
 }
+@media screen and (max-width: 550px) {
+  .price {
+    position: relative;
+    top: -54px;
+  }
+}
 
 .liste_ours_img {
   width: 242px;
   height: 181px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+@media screen and (max-width: 550px) {
+  .liste_ours_img {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+  }
 }
 
 .btn {
@@ -65,6 +80,12 @@
   width: 154px;
   font-size: medium;
   font-weight: 400;
+}
+@media screen and (max-width: 550px) {
+  .btn {
+    position: relative;
+    bottom: -37px;
+  }
 }
 
 nav {

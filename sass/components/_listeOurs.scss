@@ -12,7 +12,7 @@
  height: 182px;
  border-radius: 20px;
  background-color: white;
- @include mobile_liste_ours
+ @include mobile_liste_ours;
 }
 
 .liste_ours_desc{
@@ -38,6 +38,7 @@ font-weight: 500;
   padding-left: 20px;
   font-size: 19px;
   font-weight: 400;
+  @include mobile_liste_ours_price;
 }
 
 .liste_ours_img {
@@ -45,6 +46,7 @@ font-weight: 500;
     height: 181px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    @include mobile_liste_ours_img
 }
 
 
