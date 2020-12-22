@@ -10,10 +10,10 @@ class Ours {
 }
 
 // Création de nouvelles instances
-let ours1 = new Ours('teddy1', 45, 'description1', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
-let ours2 = new Ours('teddy2', 40, 'decription2', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
-let ours3 = new Ours('teddy3', 37, 'description3', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_4.jpg');
-let ours4 = new Ours('teddy4', 30, 'description4', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_5.jpg');
+let ours1 = new Ours('teddy', 45, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
+let ours2 = new Ours('Woody', 40, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
+let ours3 = new Ours('Winnie', 37, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_4.jpg');
+let ours4 = new Ours('Baloo', 30, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_1.jpg');
 
 
 // Création du tableau
@@ -29,21 +29,30 @@ const listeVue = document.getElementById('liste');
 // Boucle pour afficher chaque élément du tableau
 for (let i in listeOurs) {
     let productOurs = document.createElement('div');
-    productOurs.classList.add('ours1');
+    productOurs.classList.add('listeOurs');
 
     // Afficher l'image
     let imageDivOurs = document.createElement('div');
     let productImage = document.createElement('img');
-    console.log(listeOurs[i].imageUrl);
+    productImage.classList.add('liste_ours_img');
+    productImage.src = listeOurs[i].imageURL;
+    
     
 
     // Afficher le nom + la description
     let productRightDiv = document.createElement('div');
-    productRightDiv.classList.add('ours1_desc');
+    productRightDiv.classList.add('liste_ours_desc');
     let productName = document.createElement('p');
+    productName.classList.add('ours_name');
     let productDesc = document.createElement ('p');
+    productDesc.classList.add('ours_desc')
     productName.innerText = `${listeOurs[i].name}`;
     productDesc.innerText = `${listeOurs[i].description}`;
+
+    // Afficher le CTA
+    let productCTA = document.createElement('div');
+    productCTA.classList.add('btn');
+    productCTA.innerText = `Ajouter au panier`;
 
     // Afficher le prix
     let productRightDivPrice = document.createElement('div');
@@ -55,7 +64,7 @@ for (let i in listeOurs) {
     listeVue.append(productOurs);
     productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
     imageDivOurs.append(productImage);
-    productRightDiv.append(productName, productDesc);
+    productRightDiv.append(productName, productDesc, productCTA);
     productRightDivPrice.append(productPrice);
 
 };

@@ -1,23 +1,49 @@
-.ours1 {
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.listeOurs {
  display: flex;
- background-color: aliceblue;
- width: 50%;
+ width: 530px;
  margin: auto;
  margin-bottom: 20px;
+ height: 182px;
+ border-radius: 20px;
+ background-color: white;
 }
 
-.ours1_img {
-  background-image:url(../../images/teddy_1.jpg);
-    width: 10em;
-    height: 10em;
-    background-size: cover;
+.liste_ours_desc{
+padding-left: 15px;
+padding-top: 15px;
 }
 
-.ours1_desc{
-padding-left: 10px;
+.ours_name {
+font-size: 25px;
+margin: 0;
+font-weight: 500;
+
+}
+
+.ours_desc {
+  font-weight: 300;
+  font-size: 14px;
+  height: 65px;
+  width: 200px;
 }
 
 .price {
-  padding-left: 10px;
+  padding-left: 20px;
+  font-size: 19px;
+  font-weight: 400;
 }
+
+.liste_ours_img {
+    width: 242px;
+    height: 181px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 
