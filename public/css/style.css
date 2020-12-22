@@ -13,6 +13,15 @@
   border-radius: 20px;
   background-color: white;
 }
+@media screen and (max-width: 550px) {
+  .listeOurs {
+    width: 530px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+  }
+}
 
 .liste_ours_desc {
   padding-left: 15px;

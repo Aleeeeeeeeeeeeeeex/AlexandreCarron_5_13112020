@@ -1,23 +1,15 @@
 
-@mixin mobile-item {
+@mixin mobile_liste_ours {
     @media screen and (max-width: $breakpoints-mobile){
-    width: 278px;
-    margin-left: 1px;
+        width: 530px;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: white;
     }
 }
 
-@mixin mobile-heart {
-    @media screen and (max-width:$breakpoints-mobile){
-    padding-right: 38px;
-    }
-}
 
-@mixin mobile-menu {
-    @media screen and (max-width:$breakpoints-mobile){
-    width: 310px;
-    }
-}
-    
     
 
 

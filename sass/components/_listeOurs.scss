@@ -12,6 +12,7 @@
  height: 182px;
  border-radius: 20px;
  background-color: white;
+ @include mobile_liste_ours
 }
 
 .liste_ours_desc{
