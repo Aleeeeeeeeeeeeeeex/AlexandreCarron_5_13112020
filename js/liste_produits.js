@@ -1,5 +1,4 @@
 // API Objet teddies
-
 function promiseGet() {
     return new Promise((resolve, reject) => {
         let recupHttp = new XMLHttpRequest();
@@ -9,7 +8,6 @@ function promiseGet() {
             if(this.readyState === XMLHttpRequest.DONE) {
                 if(this.status === 200) {
                     resolve(JSON.parse(this.responseText));
-                    console.log("Administration : connection ok");
                 }else{
                     reject(recupHttp);
                 }
@@ -18,9 +16,7 @@ function promiseGet() {
     })
 }
 
-
-
-
+console.log(Promise)
 
 // Afficher le tableau
 const listeVue = document.getElementById('liste');
