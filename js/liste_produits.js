@@ -9,7 +9,7 @@ function promiseGet() {
             if(this.readyState === XMLHttpRequest.DONE) {
                 if(this.status === 200) {
                     resolve(JSON.parse(this.responseText));
-                    console.log(resolve)
+                    console.log("Administration : connection ok");
                 }else{
                     reject(recupHttp);
                 }
@@ -19,9 +19,7 @@ function promiseGet() {
 }
 
 
-function(product){
-    displayProduct(product);
-};
+
 
 
 // Afficher le tableau
@@ -69,6 +67,6 @@ for (let i in product) {
     productRightDiv.append(productName, productDesc, productCTA);
     productRightDivPrice.append(productPrice);
 
-};
+}};
 
 
