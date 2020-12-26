@@ -19,17 +19,37 @@ function promiseGet() {
 }
 
 
-function(product){
-    displayProduct(product);
-};
+
+// Création de l'objet Ours
+
+class Ours {
+    constructor (name, price, description, imageURL){
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.imageURL = imageURL;
+    }
+}
+
+// Création de nouvelles instances
+let ours1 = new Ours('teddy', 45, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_2.jpg');
+let ours2 = new Ours('Woody', 40, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_3.jpg');
+let ours3 = new Ours('Winnie', 37, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_4.jpg');
+let ours4 = new Ours('Baloo', 30, 'Le plus adorable que vous nayez jamais vu de la marque Nicotoy, pour dénorme câlins.', 'https://alex2020git.github.io/AlexandreCarron_5_13112020/images/teddy_1.jpg');
+
+
+// Création du tableau
+let listeOurs = [];
+listeOurs.push(ours1, ours2, ours3, ours4);
+let numberOfOurs = listeOurs.length;
+
 
 
 // Afficher le tableau
 const listeVue = document.getElementById('liste');
 
-function displayProduct(product){
 // Boucle pour afficher chaque élément du tableau
-for (let i in product) {
+for (let i in listeOurs) {
     let productOurs = document.createElement('div');
     productOurs.classList.add('listeOurs');
 
@@ -37,7 +57,7 @@ for (let i in product) {
     let imageDivOurs = document.createElement('div');
     let productImage = document.createElement('img');
     productImage.classList.add('liste_ours_img');
-    productImage.src = product[i].imageURL;
+    productImage.src = listeOurs[i].imageURL;
     
     
 
