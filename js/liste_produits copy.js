@@ -82,6 +82,8 @@ for (let i in listeOurs) {
     let productPrice = document.createElement('p');
     productPrice.innerText = `${listeOurs[i].price}` + '€';
 
+    
+
     //structure Div
     listeVue.append(productOurs);
     productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
