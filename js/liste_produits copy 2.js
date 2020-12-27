@@ -8,7 +8,6 @@ request.send();
 // Stockage de la réponse à la requête dans produits
 request.onload = function() {
     var produits = request.response;
-    console.log(produits)
 
 
 // Afficher le tableau
@@ -18,7 +17,7 @@ const listeVue = document.getElementById('liste');
 for (let i in produits) {
     let productOurs = document.createElement('div');
     productOurs.classList.add('listeOurs');
-
+    console.log(produits)
 
     // Afficher l'image
     let imageDivOurs = document.createElement('div');
