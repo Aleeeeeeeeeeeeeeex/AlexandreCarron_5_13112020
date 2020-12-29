@@ -29,16 +29,37 @@ for (let i in produits) {
 
     // Afficher l'image du produit
     let imageDivProduit = document.createElement('div');
-    imageDivProduit.classList.add('produit_img')
+    imageDivProduit.classList.add('div_produit_img')
     let productImage = document.createElement('img');
-    productImage.classList.add('liste_ours_img');
+    productImage.classList.add('produit_img');
     productImage.src = produits[i].imageUrl;
+
+
+    // Afficher le nom + la description
+    let productRightDiv = document.createElement('div');
+    productRightDiv.classList.add('liste_ours_desc');
+    let productName = document.createElement('p');
+    productName.classList.add('ours_name');
+    let productDesc = document.createElement ('p');
+    productDesc.classList.add('ours_desc')
+    productName.innerText = produits[i].name;
+    productDesc.innerText = produits[i].description;
+
+
+    // Afficher le prix
+    let productRightDivPrice = document.createElement('div');
+    productRightDivPrice.classList.add('price');
+    let productPrice = document.createElement('p');
+    productPrice.innerText = produits[i].price / 100 + '€';
+    console.log(produits)
    
 
 //structure Div
     
-    ficheProduit.append(imageDivProduit);
-    imageDivProduit.append(productImage)
+    ficheProduit.append(imageDivProduit, productRightDiv);
+    imageDivProduit.append(productImage);
+    productRightDiv.append(productName)
+    
 }
      
 

@@ -69,6 +69,20 @@
   }
 }
 
+#produit {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.produit_img {
+  width: 400px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffffff;
@@ -223,6 +237,10 @@ a:visited {
 
 .section_color_gris {
   background-color: #f6f6f6;
+}
+
+.color_black {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
