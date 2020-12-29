@@ -42,8 +42,8 @@ for (let i in produits) {
     
     linkCTA.classList.add('btn');
     linkCTA.innerText = `Ajouter au panier `;
-    linkCTA.setAttribute('href', "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-    console.log(produits[i]._id)
+    linkCTA.setAttribute('href', "produit.html?id=",produits[i]._id);
+    
     
 
 
@@ -62,7 +62,6 @@ for (let i in produits) {
     productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
     imageDivOurs.append(productImage);
     productRightDiv.append(productName, productDesc, linkCTA);
-    
     productRightDivPrice.append(productPrice);
      
 }
