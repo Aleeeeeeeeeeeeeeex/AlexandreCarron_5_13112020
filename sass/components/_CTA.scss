@@ -9,5 +9,7 @@
     width: 154px;
     font-size: medium;
     font-weight: 400;
+    padding-left: 18px;
+    padding-right: 18px;
     @include mobile_btn;
   }

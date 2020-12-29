@@ -80,6 +80,8 @@
   width: 154px;
   font-size: medium;
   font-weight: 400;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 @media screen and (max-width: 550px) {
   .btn {

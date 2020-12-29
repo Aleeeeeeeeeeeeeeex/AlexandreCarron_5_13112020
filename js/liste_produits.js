@@ -38,21 +38,16 @@ for (let i in produits) {
     productDesc.innerText = produits[i].description;
 
     // Afficher le CTA
-    let linkCTA = document.createElement('a');
-    
-    linkCTA.classList.add('btn');
-    linkCTA.innerText = `Ajouter au panier `;
-    linkCTA.setAttribute('href', "produit.html?id=",produits[i]._id);
-    
-    
-
+    let linkCTA = document.createElement('div');
+    linkCTA.innerHTML = `<a href="produit.html?id=${produits[i]._id}" class="btn">Voir le produit</a>`;
 
 
     // Afficher le prix
     let productRightDivPrice = document.createElement('div');
     productRightDivPrice.classList.add('price');
     let productPrice = document.createElement('p');
-    productPrice.innerText = produits[i].price + '€';
+    productPrice.innerText = produits[i].price / 100 + '€';
+    console.log(produits)
 
    
 
