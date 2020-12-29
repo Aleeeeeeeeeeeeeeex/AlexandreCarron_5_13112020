@@ -24,7 +24,8 @@ for (let i in produits) {
     let imageDivOurs = document.createElement('div');
     let productImage = document.createElement('img');
     productImage.classList.add('liste_ours_img');
-    productImage.src = produits[i].imageURL;
+    productImage.src = produits[i].imageUrl;
+    
 
     // Afficher le nom + la description
     let productRightDiv = document.createElement('div');
@@ -37,9 +38,12 @@ for (let i in produits) {
     productDesc.innerText = produits[i].description;
 
     // Afficher le CTA
-    let productCTA = document.createElement('div');
-    productCTA.classList.add('btn');
-    productCTA.innerText = `Ajouter au panier `;
+    let linkCTA = document.createElement('a');
+    
+    linkCTA.classList.add('btn');
+    linkCTA.innerText = `Ajouter au panier `;
+    linkCTA.setAttribute('href', "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    console.log(produits[i]._id)
     
 
 
@@ -53,10 +57,12 @@ for (let i in produits) {
    
 
 //structure Div
+    
     listeVue.append(productOurs);
     productOurs.append(imageDivOurs, productRightDiv, productRightDivPrice);
     imageDivOurs.append(productImage);
-    productRightDiv.append(productName, productDesc, productCTA);
+    productRightDiv.append(productName, productDesc, linkCTA);
+    
     productRightDivPrice.append(productPrice);
      
 }
