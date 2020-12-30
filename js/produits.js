@@ -55,6 +55,7 @@ for (let i in produits) {
 
     // Afficher le CTA
     let linkCTA = document.createElement('div');
+    linkCTA.classList.add('btn_fiche_produit')
     linkCTA.innerHTML = `<a href="produit.html?id=${produits[i]._id}" class="btn btn_fiche_produit">Ajouter au panier</a>`;
    
 
