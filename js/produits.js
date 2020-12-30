@@ -52,14 +52,18 @@ for (let i in produits) {
     let productPrice = document.createElement('p');
     productPrice.innerText = produits[i].price / 100 + '€';
     console.log(produits)
+
+    // Afficher le CTA
+    let linkCTA = document.createElement('div');
+    linkCTA.innerHTML = `<a href="produit.html?id=${produits[i]._id}" class="btn btn_fiche_produit">Ajouter au panier</a>`;
    
 
 //structure Div
     
-    ficheProduit.append(imageDivProduit, productRightDiv);
+    ficheProduit.append(imageDivProduit, productRightDiv, productRightDivPrice);
     imageDivProduit.append(productImage);
-    productRightDiv.append(productName)
-    
+    productRightDiv.append(productName, productDesc, linkCTA)
+    productRightDivPrice.append(productPrice)
 }
      
 
