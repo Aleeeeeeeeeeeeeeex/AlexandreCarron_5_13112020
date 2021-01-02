@@ -1,19 +1,39 @@
+
+// récupérer l'Id de l'url
+let params = new URLSearchParams(document.location.search);
+let ID = params.get("id") // est le nombre après l'ID
+console.log(ID);
+
 // Chargement du JSON
-var requestURL = 'http://localhost:3000/api/teddies';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
+function promiseGet() {
+    return new Promise((resolve, reject) => {
+        let recupHttp = new XMLHttpRequest();
+        recupHttp.open('GET', `http://localhost:3000/api/teddies/${ID}`);
+        recupHttp.send();
+        recupHttp.onreadystatechange = function() {
+            if(this.readyState === XMLHttpRequest.DONE) {
+                if(this.status === 200) {
+                    resolve(JSON.parse(this.responseText));
+                    console.log(resolve)
+                }else{
+                    reject(recupHttp);
+                }
+            }
+        }
+    })
+}
+
+.then(function(response) {
+    console.log ('test')
+}
+
 
 // Stockage de la réponse à la requête dans produits
 request.onload = function() {
     var produits = request.response;
     console.log(produits)
 
-// récupérer l'Id de l'url
-let params = new URLSearchParams(document.location.search);
-let ID = params.get("id") // est le nombre après l'ID
-console.log(ID);
+
 
 // Afficher le produit
 const ficheProduit = document.getElementById('produit');
