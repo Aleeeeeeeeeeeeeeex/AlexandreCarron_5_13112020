@@ -18,20 +18,20 @@ function promiseGet() {
                 }else{
                     reject(recupHttp);
                 }
+                .then(function(response) {
+                    console.log ('test')
+                });
             }
         }
+       
     })
-}
-
-.then(function(response) {
-    console.log ('test')
-}
+   
+};
 
 
-// Stockage de la réponse à la requête dans produits
-request.onload = function() {
-    var produits = request.response;
-    console.log(produits)
+
+
+
 
 
 
@@ -89,4 +89,4 @@ for (let i in produits) {
      
 
 }
-}
+
