@@ -8,7 +8,7 @@ request.send();
 // Stockage de la réponse à la requête dans produits
 request.onload = function() {
     var produits = request.response;
-    console.log(produits)
+    console.log(produits.colors)
 
 
 // Afficher le tableau

@@ -85,10 +85,6 @@
   padding-bottom: 75px;
 }
 
-.btn_fiche_produit {
-  margin-top: 100px;
-}
-
 .produit_img {
   width: 400px;
   border-top-left-radius: 20px;
@@ -117,7 +113,7 @@
 }
 
 .btn_fiche_produit {
-  margin-top: 101px;
+  margin-top: 45px;
 }
 
 nav {
