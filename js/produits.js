@@ -59,6 +59,7 @@ const ficheProduit = document.getElementById('produit');
  let option = document.createElement('div');
  let numberOfColors = response.colors.length;
  console.log(numberOfColors)
+ 
  //Afficher le bon nombre de couleurs 
 if (numberOfColors == 3){
  option.innerHTML = `<label for="pet-select">Couleurs</label> <select name="pets" id="pet-select"> <option value="">--Selectionnez une couleur--</option> <option value="dog">${response.colors[0]}</option><option value="cat">${response.colors[1]}</option><option value="cat">${response.colors[2]}</option></select>`
